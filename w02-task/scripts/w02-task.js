@@ -29,9 +29,18 @@ imageElement.setAttribute('alt', 'Profile image of profilePicture')
 let food = ['Pizza','Hot Dog','Spaguetti'];
 
 foodElement.innerHTML = food;
+//adding new element
 let anotherFood = "chicken";
 food.push(anotherFood);
 foodElement.innerHTML+= `<br>${food}`;
+//delete first element
+food.shift();
+foodElement.innerHTML+= `<br>${food}`;
+//delete last element
+food.pop();
+foodElement.innerHTML+= `<br>${food}`;
+
+
 
 
 
